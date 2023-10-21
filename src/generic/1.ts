@@ -3,14 +3,14 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-function getPromise () {
-  return new Promise((resolve) => {
-    resolve(['Text', 50]);
-  });
+function getPromise(): Promise<(string | number)[]> {
+  return new Promise<(string | number)[]>((resolve) => resolve(["Text", 50]));
 }
 
-getPromise()
-.then((data) => {
+// 1. типізація нового екземпляру класу Promise
+// 2. типізація результату виконання функції getPromise
+
+getPromise().then((data) => {
   console.log(data);
 });
 
