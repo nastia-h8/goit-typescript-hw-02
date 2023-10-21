@@ -4,7 +4,7 @@
 
 function showMessage(message: string): void {
   console.log(message);
-}
+} // для функцій, які не повертають значення
 
 function calc(num1: number, num2: number): number {
   return num1 + num2;

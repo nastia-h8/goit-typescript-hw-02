@@ -7,4 +7,8 @@ interface KeyValuePair<TKey, TValue> {
   key: TKey;
   value: TValue;
 }
+
+// const pair1: KeyValuePair <string, string> = { key: "name", value: "Alice" };
+// const pair2: KeyValuePair <number, boolean> = { key: 1, value: true };
+
 export {};

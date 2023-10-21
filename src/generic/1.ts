@@ -3,12 +3,12 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
+// 1. типізація нового екземпляру класу Promise
+// 2. типізація результату виконання функції getPromise
+
 function getPromise(): Promise<(string | number)[]> {
   return new Promise<(string | number)[]>((resolve) => resolve(["Text", 50]));
 }
-
-// 1. типізація нового екземпляру класу Promise
-// 2. типізація результату виконання функції getPromise
 
 getPromise().then((data) => {
   console.log(data);

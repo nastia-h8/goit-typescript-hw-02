@@ -3,6 +3,8 @@
   Ви хочете створити новий тип Params, який включає всі поля з Form, крім errors.
 */
 
+// Omit<T, K> - Pick<T, K> навпаки - створює новий тип на основі типу T, не включаючи властивість К
+
 type Errors = {
   email?: string[];
   firstName?: string[];
