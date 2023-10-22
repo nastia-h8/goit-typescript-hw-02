@@ -5,18 +5,18 @@
 //const enum - видаляється під час транспіляції, на відміну від enum
 
 enum DayOfTheWeek {
-  Monday = "workday",
-  Tuesday = "workday",
-  Wednesday = "workday",
-  Thursday = "workday",
-  Friday = "workday",
-  Saturday = "weekend",
-  Sunday = "weekend",
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
 
 function isWeekend(day: DayOfTheWeek): boolean {
-  return day === "weekend" ? true : false;
+  return day === DayOfTheWeek.Saturday || day === DayOfTheWeek.Sunday;
 }
 
-console.log(isWeekend(DayOfTheWeek.Monday)); // false
+console.log(isWeekend(DayOfTheWeek.Tuesday)); // false
 console.log(isWeekend(DayOfTheWeek.Sunday)); // true

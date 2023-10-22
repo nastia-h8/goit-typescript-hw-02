@@ -7,7 +7,6 @@ class Component<T> {
 }
 
 // конкретизуємо <T> як <PageProps>
-
 interface PageProps {
   title: string;
 }
